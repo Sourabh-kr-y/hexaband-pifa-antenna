@@ -1,0 +1,254 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "T_gnd",
+         "type": "float",
+         "value": 0.01
+      },
+      {
+         "name": "L_cup",
+         "type": "float",
+         "value": 107.0
+      },
+      {
+         "name": "W_cup",
+         "type": "float",
+         "value": 40.0
+      },
+      {
+         "name": "T_sub",
+         "type": "float",
+         "value": 0.13
+      },
+      {
+         "name": "air_gap",
+         "type": "float",
+         "value": 7.0
+      },
+      {
+         "name": "T_cup",
+         "type": "float",
+         "value": 0.035
+      },
+      {
+         "name": "L_patch",
+         "type": "float",
+         "value": 40.0
+      },
+      {
+         "name": "W_patch",
+         "type": "float",
+         "value": 20.0
+      },
+      {
+         "name": "cup_layer",
+         "type": "float",
+         "value": 8.0
+      },
+      {
+         "name": "sub_layer",
+         "type": "float",
+         "value": 7.0
+      },
+      {
+         "name": "left_pa_xspan",
+         "type": "float",
+         "value": 5.8
+      },
+      {
+         "name": "left_pa_zspan",
+         "type": "float",
+         "value": 6.8
+      },
+      {
+         "name": "back_p_yspan",
+         "type": "float",
+         "value": 7.5
+      },
+      {
+         "name": "back_p_zspan",
+         "type": "float",
+         "value": 6.8
+      },
+      {
+         "name": "left_patch2_xspan",
+         "type": "float",
+         "value": 12.2
+      },
+      {
+         "name": "left_patch2_zspan",
+         "type": "float",
+         "value": 6.6
+      },
+      {
+         "name": "w3",
+         "type": "float",
+         "value": 1.8
+      },
+      {
+         "name": "top_con_zspan",
+         "type": "float",
+         "value": 3.5
+      },
+      {
+         "name": "top_con_yspan",
+         "type": "float",
+         "value": 26.0
+      },
+      {
+         "name": "lenth_ycut",
+         "type": "float",
+         "value": 16.2
+      },
+      {
+         "name": "width_zcut",
+         "type": "float",
+         "value": 4.3
+      },
+      {
+         "name": "cutlength",
+         "type": "float",
+         "value": 9.8
+      },
+      {
+         "name": "cutwidth",
+         "type": "float",
+         "value": 2.7
+      },
+      {
+         "name": "slot1_xspan",
+         "type": "float",
+         "value": 8.5
+      },
+      {
+         "name": "slot1_xwidth",
+         "type": "float",
+         "value": 0.5
+      },
+      {
+         "name": "slot1_zspan",
+         "type": "float",
+         "value": 4.0
+      },
+      {
+         "name": "slot1_toppa_mov",
+         "type": "float",
+         "value": 8.5
+      },
+      {
+         "name": "w2",
+         "type": "float",
+         "value": 1.5
+      },
+      {
+         "name": "slot1_toppa_yspan",
+         "type": "float",
+         "value": 9.0
+      },
+      {
+         "name": "short_pin_gap",
+         "type": "float",
+         "value": 1.0
+      },
+      {
+         "name": "feed_layer1_xspan",
+         "type": "float",
+         "value": 10.0
+      },
+      {
+         "name": "feed_layer1_yspan",
+         "type": "string",
+         "value": "10+13.2"
+      },
+      {
+         "name": "feed_lyrcut",
+         "type": "float",
+         "value": 7.9
+      },
+      {
+         "name": "layer1_slot_length",
+         "type": "float",
+         "value": 15.8
+      },
+      {
+         "name": "layer1_slot_width",
+         "type": "float",
+         "value": 4.0
+      },
+      {
+         "name": "slot2_width",
+         "type": "float",
+         "value": 0.8
+      },
+      {
+         "name": "slot2_length",
+         "type": "float",
+         "value": 14.6
+      },
+      {
+         "name": "slot3_length",
+         "type": "float",
+         "value": 25.4
+      },
+      {
+         "name": "slot3_xspan",
+         "type": "float",
+         "value": 6.0
+      },
+      {
+         "name": "slot3_yspan",
+         "type": "float",
+         "value": 8.0
+      },
+      {
+         "name": "width_slot3_cut",
+         "type": "float",
+         "value": 2.3
+      },
+      {
+         "name": "length_y",
+         "type": "float",
+         "value": 17.4
+      },
+      {
+         "name": "length_x",
+         "type": "float",
+         "value": 6.0
+      },
+      {
+         "name": "length_x_cut",
+         "type": "float",
+         "value": 14.0
+      },
+      {
+         "name": "length_inside_patch",
+         "type": "float",
+         "value": 22.6
+      },
+      {
+         "name": "lcut",
+         "type": "float",
+         "value": 6.7
+      },
+      {
+         "name": "width_l3_2",
+         "type": "float",
+         "value": 4.0
+      },
+      {
+         "name": "feed_pin_a_xspan",
+         "type": "float",
+         "value": 4.0
+      },
+      {
+         "name": "feed_pin_b_yspan",
+         "type": "float",
+         "value": 3.0
+      }
+   ],
+   "outputVariables": []
+}

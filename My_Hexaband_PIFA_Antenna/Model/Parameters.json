@@ -1,0 +1,305 @@
+{
+    "parameters": [
+        {
+            "descr": "Thickness of Ground",
+            "expr": "0.01",
+            "name": "T_gnd",
+            "value": "0.01"
+        },
+        {
+            "descr": "Length of Ground",
+            "expr": "107",
+            "name": "L_cup",
+            "value": "107"
+        },
+        {
+            "descr": "Width of Ground",
+            "expr": "40",
+            "name": "W_cup",
+            "value": "40"
+        },
+        {
+            "descr": "Thickness of substrate",
+            "expr": "0.13",
+            "name": "T_sub",
+            "value": "0.13"
+        },
+        {
+            "descr": "Thickness of PCB",
+            "expr": "cup_layer*T_gnd + sub_layer*T_sub",
+            "name": "T_pcb",
+            "value": "0.99"
+        },
+        {
+            "descr": "Space between PCB and Patch",
+            "expr": "7",
+            "name": "air_gap",
+            "value": "7"
+        },
+        {
+            "descr": "Thickness of Copper",
+            "expr": "0.035",
+            "name": "T_cup",
+            "value": "0.035"
+        },
+        {
+            "descr": "Width of top patch",
+            "expr": "40",
+            "name": "L_patch",
+            "value": "40"
+        },
+        {
+            "descr": "Length of patch",
+            "expr": "20",
+            "name": "W_patch",
+            "value": "20"
+        },
+        {
+            "descr": "Number of Copper layer",
+            "expr": "8",
+            "name": "cup_layer",
+            "value": "8"
+        },
+        {
+            "descr": "Number of Substrate layer",
+            "expr": "7",
+            "name": "sub_layer",
+            "value": "7"
+        },
+        {
+            "descr": "Left patch part a x-span width",
+            "expr": "5.8",
+            "name": "left_pa_xspan",
+            "value": "5.8"
+        },
+        {
+            "descr": "Left patch z-span length",
+            "expr": "6.8",
+            "name": "left_pa_zspan",
+            "value": "6.8"
+        },
+        {
+            "descr": "backpatch y-span length",
+            "expr": "7.5",
+            "name": "back_p_yspan",
+            "value": "7.5"
+        },
+        {
+            "descr": "backpatch zspan width",
+            "expr": "6.8",
+            "name": "back_p_zspan",
+            "value": "6.8"
+        },
+        {
+            "descr": "leftpatch2 x length",
+            "expr": "12.2",
+            "name": "left_patch2_xspan",
+            "value": "12.2"
+        },
+        {
+            "descr": "leftpatch2 z width",
+            "expr": "6.6",
+            "name": "left_patch2_zspan",
+            "value": "6.6"
+        },
+        {
+            "descr": "slot width",
+            "expr": "1.8",
+            "name": "w3",
+            "value": "1.8"
+        },
+        {
+            "descr": "Top feed connector xspan width",
+            "expr": "3.5",
+            "name": "top_con_zspan",
+            "value": "3.5"
+        },
+        {
+            "descr": "rectangle[art y length",
+            "expr": "26",
+            "name": "top_con_yspan",
+            "value": "26"
+        },
+        {
+            "descr": "lenth rect ycut",
+            "expr": "16.2",
+            "name": "lenth_ycut",
+            "value": "16.2"
+        },
+        {
+            "descr": "width rect zcut",
+            "expr": "4.3",
+            "name": "width_zcut",
+            "value": "4.3"
+        },
+        {
+            "descr": "rectangle cut length",
+            "expr": "9.8",
+            "name": "cutlength",
+            "value": "9.8"
+        },
+        {
+            "descr": "rectangle cut width",
+            "expr": "2.7",
+            "name": "cutwidth",
+            "value": "2.7"
+        },
+        {
+            "descr": "slot1 x span",
+            "expr": "8.5",
+            "name": "slot1_xspan",
+            "value": "8.5"
+        },
+        {
+            "descr": "slot 1 x width",
+            "expr": "0.5",
+            "name": "slot1_xwidth",
+            "value": "0.5"
+        },
+        {
+            "descr": "slot 1 zspan",
+            "expr": "4",
+            "name": "slot1_zspan",
+            "value": "4"
+        },
+        {
+            "descr": "shift",
+            "expr": "8.5",
+            "name": "slot1_toppa_mov",
+            "value": "8.5"
+        },
+        {
+            "descr": "slot 1 width",
+            "expr": "1.5",
+            "name": "w2",
+            "value": "1.5"
+        },
+        {
+            "descr": "slot 1 toppatch yspan",
+            "expr": "9",
+            "name": "slot1_toppa_yspan",
+            "value": "9"
+        },
+        {
+            "descr": "Short pin gap",
+            "expr": "1",
+            "name": "short_pin_gap",
+            "value": "1"
+        },
+        {
+            "descr": "top feed layer1",
+            "expr": "10",
+            "name": "feed_layer1_xspan",
+            "value": "10"
+        },
+        {
+            "descr": "top layer 1 yspan length",
+            "expr": "10+13.2",
+            "name": "feed_layer1_yspan",
+            "value": "23.2"
+        },
+        {
+            "descr": "length of feed cut layern1",
+            "expr": "7.9",
+            "name": "feed_lyrcut",
+            "value": "7.9"
+        },
+        {
+            "descr": "Feed layer 1 slot lenght",
+            "expr": "15.8",
+            "name": "layer1_slot_length",
+            "value": "15.8"
+        },
+        {
+            "descr": "feed layer 1 slot width",
+            "expr": "4",
+            "name": "layer1_slot_width",
+            "value": "4"
+        },
+        {
+            "descr": "width of slot 2 cut",
+            "expr": ".8",
+            "name": "slot2_width",
+            "value": ".8"
+        },
+        {
+            "descr": "slot 2 length cut",
+            "expr": "14.6",
+            "name": "slot2_length",
+            "value": "14.6"
+        },
+        {
+            "descr": "top patch slot3 length",
+            "expr": "25.4",
+            "name": "slot3_length",
+            "value": "25.4"
+        },
+        {
+            "descr": "slot 3 x span",
+            "expr": "6",
+            "name": "slot3_xspan",
+            "value": "6"
+        },
+        {
+            "descr": "slot 3 y span",
+            "expr": "8",
+            "name": "slot3_yspan",
+            "value": "8"
+        },
+        {
+            "descr": "width slot3 cut ",
+            "expr": "2.3",
+            "name": "width_slot3_cut",
+            "value": "2.3"
+        },
+        {
+            "descr": "length of tracepacing y",
+            "expr": "17.4",
+            "name": "length_y",
+            "value": "17.4"
+        },
+        {
+            "descr": "length of x ",
+            "expr": "6",
+            "name": "length_x",
+            "value": "6"
+        },
+        {
+            "descr": "just legth",
+            "expr": "14",
+            "name": "length_x_cut",
+            "value": "14"
+        },
+        {
+            "descr": "just length inside patch",
+            "expr": "22.6",
+            "name": "length_inside_patch",
+            "value": "22.6"
+        },
+        {
+            "descr": "length of cut",
+            "expr": "6.7",
+            "name": "lcut",
+            "value": "6.7"
+        },
+        {
+            "descr": "width of layer 3 part 2",
+            "expr": "4",
+            "name": "width_l3_2",
+            "value": "4"
+        },
+        {
+            "descr": "Feed pin a yspan length",
+            "expr": "4",
+            "name": "feed_pin_a_xspan",
+            "value": "4"
+        },
+        {
+            "descr": "Feed pin b y-span length",
+            "expr": "3",
+            "name": "feed_pin_b_yspan",
+            "value": "3"
+        }
+    ],
+    "version": 1
+}

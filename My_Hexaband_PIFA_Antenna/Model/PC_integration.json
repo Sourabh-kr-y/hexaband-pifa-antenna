@@ -248,6 +248,26 @@
          "name": "feed_pin_b_yspan",
          "type": "float",
          "value": 3.0
+      },
+      {
+         "name": "a",
+         "type": "float",
+         "value": 45.0
+      },
+      {
+         "name": "w1",
+         "type": "float",
+         "value": 0.5
+      },
+      {
+         "name": "slot3_a_l",
+         "type": "float",
+         "value": 2.0
+      },
+      {
+         "name": "rad",
+         "type": "string",
+         "value": "pi/180"
       }
    ],
    "outputVariables": []

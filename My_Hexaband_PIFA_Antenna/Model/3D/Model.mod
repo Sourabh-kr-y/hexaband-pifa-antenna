@@ -1033,3 +1033,355 @@ With Brick
      .Create
 End With
 
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ move wcs
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.MoveWCS "local", "0.0", "0.0", "T_pcb + air_gap"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ move wcs
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.MoveWCS "local", "0.0", "top_con_yspan", "0.0"
+
+'@ define brick: component1:slot3_a
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Brick
+     .Reset 
+     .Name "slot3_a" 
+     .Component "component1" 
+     .Material "Vacuum" 
+     .Xrange "0", "slot3_a_l" 
+     .Yrange "0", "w1" 
+     .Zrange "0", "T_cup" 
+     .Create
+End With
+
+'@ define brick: component1:slot3_b
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Brick
+     .Reset 
+     .Name "slot3_b" 
+     .Component "component1" 
+     .Material "Vacuum" 
+     .Xrange "slot3_a_l", "slot3_a_l + ((5.5-slot3_a_l)/cos(a*(pi/180)))" 
+     .Yrange "0", "w1" 
+     .Zrange "0", "T_cup" 
+     .Create
+End With
+
+'@ transform: rotate component1:slot3_b
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:slot3_b" 
+     .Origin "Free" 
+     .Center "slot3_a_l", "w1", "0" 
+     .Angle "0", "0", "-a" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Rotate" 
+End With
+
+'@ pick end point
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Pick.PickEndpointFromId "component1:slot3_a", "4"
+
+'@ pick end point
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Pick.PickEndpointFromId "component1:slot3_b", "2"
+
+'@ define distance dimension
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Dimension
+    .Reset
+    .CreationType "picks"
+    .SetType "Distance"
+    .SetID "14"
+    .SetOrientation "Force-V"
+    .SetDistance "4.116667"
+    .SetConnectedElement1 "component1:slot3_a"
+    .SetConnectedElement2 "component1:slot3_b"
+    .Create
+End With
+
+Pick.ClearAllPicks
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ move wcs
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.MoveWCS "local", "slot3_a_l + ((5.5-slot3_a_l)/cos(a*(pi/180)))*sin(a*rad)", "0.0", "0.0"
+
+'@ move wcs
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.MoveWCS "local", "0.0", "-(((5.5-slot3_a_l)/cos(a*rad))*sin(a*rad)) + w1", "0.0"
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ move wcs
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.MoveWCS "local", "-e1", "-e2", "0.0"
+
+'@ move wcs
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.MoveWCS "local", "0.0", "0.0", "T_cup"
+
+'@ define brick: component1:solid1
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "Vacuum" 
+     .Xrange "0", "5 + e1" 
+     .Yrange "0", "w1" 
+     .Zrange "-T_cup", "0" 
+     .Create
+End With
+
+'@ pick end point
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Pick.PickEndpointFromId "component1:solid1", "2"
+
+'@ pick end point
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Pick.PickEndpointFromId "component1:top patch", "86"
+
+'@ define distance dimension
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Dimension
+    .Reset
+    .CreationType "picks"
+    .SetType "Distance"
+    .SetID "15"
+    .SetOrientation "Force-V"
+    .SetDistance "-1.397497"
+    .SetConnectedElement1 "component1:solid1"
+    .SetConnectedElement2 "component1:top patch"
+    .Create
+End With
+
+Pick.ClearAllPicks
+
+'@ change dimension 15
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Dimension
+    .Reset
+    .SetID "15"
+    .SetDistance "-3.727198"
+    .SetOrientation "Force-V"
+    .Modify
+End With
+
+'@ pick end point
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Pick.PickEndpointFromId "component1:top patch", "58"
+
+'@ pick end point
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Pick.PickEndpointFromId "component1:top patch", "86"
+
+'@ define distance dimension
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Dimension
+    .Reset
+    .CreationType "picks"
+    .SetType "Distance"
+    .SetID "16"
+    .SetOrientation "Force-V"
+    .SetDistance "-12.153183"
+    .SetConnectedElement1 "component1:top patch"
+    .SetConnectedElement2 "component1:top patch"
+    .Create
+End With
+
+Pick.ClearAllPicks
+
+'@ define brick: component1:slot3_d
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Brick
+     .Reset 
+     .Name "slot3_d" 
+     .Component "component1" 
+     .Material "Vacuum" 
+     .Xrange "(5 + e1)", "(5 + e1) - w1" 
+     .Yrange "-2", "0" 
+     .Zrange "-T_cup", "0" 
+     .Create
+End With
+
+'@ rename block: component1:solid1 to: component1:slot3_c
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Solid.Rename "component1:solid1", "slot3_c"
+
+'@ transform: rotate component1:slot3_d
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:slot3_d" 
+     .Origin "Free" 
+     .Center "5 + e1", "0", "0" 
+     .Angle "0", "0", "-30" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Rotate" 
+End With
+
+'@ boolean subtract shapes: component1:top patch, component1:slot3_a
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Solid.Subtract "component1:top patch", "component1:slot3_a"
+
+'@ boolean subtract shapes: component1:top patch, component1:slot3_b
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Solid.Subtract "component1:top patch", "component1:slot3_b"
+
+'@ boolean subtract shapes: component1:top patch, component1:slot3_c
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Solid.Subtract "component1:top patch", "component1:slot3_c"
+
+'@ boolean subtract shapes: component1:top patch, component1:slot3_d
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Solid.Subtract "component1:top patch", "component1:slot3_d"
+

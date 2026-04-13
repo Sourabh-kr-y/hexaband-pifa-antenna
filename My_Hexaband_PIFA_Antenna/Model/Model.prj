@@ -4,9 +4,10 @@
    "Last Problem Type": "High Frequency",
    "Last Solver Type": "HF Time Domain",
    "Last Solver Type Abb": "t",
-   "Mesh Cells": "",
+   "Mesh Cells": "283,392",
    "Mesh Type": "Hexahedral",
+   "Modeler Unique ID": "5:my_hexaband_pifa_antenna.cst?9c16b3ef58f8d60edf4d370b7a2c2b80?34321:numberofparameters=48:port=1>mode=1>zre=0>zim=0:::ms_a_l?l_cup?l_patch?t_cup?t_gnd?t_pcb?t_sub?w_cup?w_patch?a?air_gap?back_p_yspan?back_p_zspan?cup_layer?cutlength?cutwidth?e1?e2?feed_layer1_xspan?feed_layer1_yspan?feed_pin_a_xspan?feed_pin_b_yspan?layer1_slot_length?layer1_slot_width?lcut?left_pa_xspan?left_pa_zspan?left_patch2_xspan?left_patch2_zspan?length_inside_patch?rad?short_pin_gap?slot1_toppa_mov?slot1_toppa_yspan?slot1_xspan?slot1_zspan?slot2_length?slot2_width?slot3_a_l?slot3_yspan?sub_layer?top_con_yspan?top_con_zspan?w1?w2?w3?width_l3_2?width_slot3_cut",
    "ProjectVersion": "'# MWS Version: Version 2025.1 - Oct 28 2024 - ACIS 34.0.1 -",
-   "Results": "Unavailable",
+   "Results": "Time Domain: S-Parameter",
    "Version": "3"
 }

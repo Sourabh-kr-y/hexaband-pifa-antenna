@@ -1,0 +1,4 @@
+Solver_HF_TD_AMD64 @ LAPTOP-4HA561HA:  ========================================================================================================
+                                       775.00 ms | --> peak | SV-crop-all | Outside MCalcResultIdentification (Solver) | 105.36 MB |  0.0000 MB
+                                       789.00 ms |  --> 2nd | SV-crop-all | Outside MCalcResultIdentification (Solver) | 105.23 MB | -0.1270 MB
+                                       ========================================================================================================

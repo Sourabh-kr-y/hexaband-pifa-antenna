@@ -4,8 +4,7 @@
 [PCB_IMPORT: False]
 [PCB_IMPORT_NEW: False]
 [DISABLE_FAST_LOAD: False]
-[WCS: 5.146446609406726 22.646446609406727 8.0250000000000004 0 0 1 1 0 0]
-[BBOX:0 107 0 40 0 8.0250000000000004]
+[BBOX:-42.827494000000002 149.827494 -42.827494000000002 82.827494000000002 -42.827494000000002 50.852494]
 [BBOX_STRUCTURE:0 107 0 40 0 8.0250000000000004]
 [UNITS]
      .SetUnit "Length", "mm"
@@ -21,7 +20,7 @@
      .SetResultUnit "frequency", "frequency", "" 
 [ENDUNITS]
 [FREQUENCYRANGE]
-Solver.FrequencyRange "0.0", "0.0" 
+Solver.FrequencyRange "0.5", "3" 
 [ENDFREQUENCYRANGE]
 [BACKGROUND]
      .XminSpace "0.0" 
@@ -550,3 +549,28 @@ Solver.FrequencyRange "0.0", "0.0"
      .Transparency "0" 
      .Create
 [ENDMATERIAL]
+[WAVEGUIDE: 1]
+     .Label ""
+     .Folder ""
+     .NumberOfModes "1"
+     .AdjustPolarization "False"
+     .PolarizationAngle "0"
+     .ReferencePlaneDistance "0"
+     .TextSize "50"
+     .TextMaxLimit "1"
+     .Coordinates "Free"
+     .Orientation "zmax"
+     .PortOnBound "False"
+     .ClipPickedPortToBound "False"
+     .Xrange "0", "7.9436"
+     .Yrange "0", "15.6572"
+     .Zrange "0", "0"
+     .XrangeAdd "0.0", "0.0"
+     .YrangeAdd "0.0", "0.0"
+     .ZrangeAdd "0.0", "0.0"
+     .SingleEnded "False"
+     .Shield "PEC"
+     .WaveguideMonitor "False"
+     .ReferenceWCS "3.9718", "7.8286", "0", "0", "0", "1", "1", "0", "0"
+(TRANSFORM) "0", "0", "1", "1", "0", "0", "0", "1", "0"| "23.3064", "40", "0.0099999999999999"(ENDTRANSFORM)
+[ENDWAVEGUIDE]

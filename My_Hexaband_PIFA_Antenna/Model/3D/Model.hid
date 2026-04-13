@@ -775,13 +775,10 @@ Solid.Delete "component1:Feed pin c"
 84
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -795,13 +792,10 @@ WCS.ActivateWCS "global"
 85
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -815,13 +809,10 @@ WCS.ActivateWCS "local"
 86
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -835,13 +826,10 @@ WCS.ActivateWCS "global"
 87
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -855,13 +843,10 @@ WCS.ActivateWCS "local"
 88
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -875,13 +860,10 @@ WCS.ActivateWCS "global"
 89
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -895,13 +877,10 @@ WCS.ActivateWCS "local"
 90
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -915,13 +894,10 @@ WCS.ActivateWCS "global"
 91
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -935,13 +911,10 @@ WCS.ActivateWCS "local"
 92
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -955,13 +928,10 @@ WCS.ActivateWCS "global"
 93
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -975,13 +945,10 @@ WCS.ActivateWCS "local"
 94
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -1010,13 +977,10 @@ WCS.ActivateWCS "global"
 96
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -1030,13 +994,10 @@ WCS.ActivateWCS "local"
 97
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -1050,13 +1011,10 @@ WCS.ActivateWCS "global"
 98
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -1070,13 +1028,10 @@ WCS.ActivateWCS "local"
 99
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -1090,13 +1045,10 @@ WCS.ActivateWCS "global"
 100
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -1110,13 +1062,10 @@ WCS.ActivateWCS "local"
 101
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -1147,11 +1096,8 @@ WCS.ActivateWCS "global"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:slot3_a"
-
 Solid.Delete "component1:slot3_a"
-
 [end]content
 [start]recover_picks
 1
@@ -1167,11 +1113,8 @@ Solid.Delete "component1:slot3_a"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:slot3_b"
-
 Solid.Delete "component1:slot3_b"
-
 [end]content
 [start]recover_picks
 1
@@ -1215,13 +1158,10 @@ Solid.Delete "component1:slot3_b"
 109
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -1235,13 +1175,10 @@ WCS.ActivateWCS "local"
 110
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -1255,13 +1192,10 @@ WCS.ActivateWCS "global"
 111
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -1275,13 +1209,10 @@ WCS.ActivateWCS "local"
 112
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -1325,13 +1256,10 @@ WCS.ActivateWCS "global"
 115
 [end]block_index
 [start]command
-
 '@ activate local coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "local"
-
 [end]content
 [start]recover_picks
 0
@@ -1345,13 +1273,10 @@ WCS.ActivateWCS "local"
 116
 [end]block_index
 [start]command
-
 '@ activate global coordinates
-
 [end]command
 [start]content
 WCS.ActivateWCS "global"
-
 [end]content
 [start]recover_picks
 0
@@ -1397,9 +1322,7 @@ WCS.ActivateWCS "global"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:solid1"
-
 [end]content
 [start]recover_picks
 1
@@ -1475,8 +1398,84 @@ Solid.Delete "component1:solid1"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:slot3_d"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+136
+[end]block_index
+[start]command
+
+'@ activate local coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "local"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+137
+[end]block_index
+[start]command
+
+'@ activate global coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "global"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+139
+[end]block_index
+[start]command
+
+'@ activate local coordinates
+
+[end]command
+[start]content
+WCS.ActivateWCS "local"
+
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+140
+[end]block_index
+[start]command
+[end]command
+[start]content
+
+Solid.Delete "component1:stripline_a"
 
 [end]content
 [start]recover_picks
@@ -1486,8 +1485,45 @@ Solid.Delete "component1:slot3_d"
 1
 [end]delete_solids
 [end]undo_item
+[start]undo_item
+[start]block_index
+142
+[end]block_index
+[start]command
+[end]command
+[start]content
+
+Solid.Delete "component1:microstrip_b"
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+143
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
 [end]history_fast_undo
 [start]unique_ids
+[start]144
+'[UNIQUE_ID]port$port1|f83cb819-4009-4a1c-becf-0ca8f2758447[/UNIQUE_ID]
+
+[end]144
 [end]unique_ids
 [start]PortAndLumpedLabelState
 [start]ShowLabels

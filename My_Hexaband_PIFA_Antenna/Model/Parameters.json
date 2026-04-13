@@ -332,6 +332,12 @@
             "expr": "w1*sin((pi/2) - a*rad)",
             "name": "e2",
             "value": "0.353553390593274"
+        },
+        {
+            "descr": "Microstrip x-axis length",
+            "expr": "30",
+            "name": "ms_a_l",
+            "value": "30"
         }
     ],
     "version": 1

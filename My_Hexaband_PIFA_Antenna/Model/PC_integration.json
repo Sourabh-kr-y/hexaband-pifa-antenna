@@ -268,6 +268,11 @@
          "name": "rad",
          "type": "string",
          "value": "pi/180"
+      },
+      {
+         "name": "ms_a_l",
+         "type": "float",
+         "value": 30.0
       }
    ],
    "outputVariables": []

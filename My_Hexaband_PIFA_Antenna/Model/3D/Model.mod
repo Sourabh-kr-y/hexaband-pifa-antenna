@@ -3,7 +3,7 @@
 '# length = mm
 '# frequency = GHz
 '# time = ns
-'# frequency range: fmin = 0.0 fmax = 0.0
+'# frequency range: fmin = 0.5 fmax = 3
 '# created = '[VERSION]2025.1|34.0.1|20241028[/VERSION]
 
 
@@ -1000,7 +1000,7 @@ With Brick
      .Component "component1" 
      .Material "Copper (annealed)" 
      .Xrange "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan", "feed_layer1_xspan-width_l3_2" 
-     .Yrange "top_con_yspan-23.2 + 1.5", "top_con_yspan-23.2 + 1.5 + w2" 
+     .Yrange "top_con_yspan-23.2 + 1.5", "top_con_yspan-23.2 + 1.5 + w3" 
      .Zrange "T_pcb+air_gap-top_con_zspan-1.8-T_cup", "T_pcb+air_gap-top_con_zspan-1.8" 
      .Create
 End With
@@ -1013,7 +1013,7 @@ With Brick
      .Name "Feed pin b" 
      .Component "component1" 
      .Material "Copper (annealed)" 
-     .Xrange "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan", "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan - w2" 
+     .Xrange "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan", "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan - w3" 
      .Yrange "top_con_yspan-23.2 + 1.5", "top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan" 
      .Zrange "T_pcb+air_gap-top_con_zspan-1.8-T_cup", "T_pcb+air_gap-top_con_zspan-1.8" 
      .Create
@@ -1028,7 +1028,7 @@ With Brick
      .Component "component1" 
      .Material "Copper (annealed)" 
      .Xrange "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan", "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan + T_cup" 
-     .Yrange "top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan - w2", "top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan" 
+     .Yrange "top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan - w3", "top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan" 
      .Zrange "T_pcb", "T_pcb+air_gap-top_con_zspan-1.8" 
      .Create
 End With
@@ -1384,4 +1384,138 @@ Solid.Subtract "component1:top patch", "component1:slot3_c"
 
 '[VERSION]2025.1|34.0.1|20241028[/VERSION]
 Solid.Subtract "component1:top patch", "component1:slot3_d"
+
+'@ delete dimension 7
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Dimension
+    .RemoveDimension "7"
+End With
+
+'@ change dimension 1
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Dimension
+    .Reset
+    .SetID "1"
+    .SetDistance "1.272781"
+    .SetOrientation "U-Axis"
+    .Modify
+End With
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ activate local coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "local"
+
+'@ set wcs properties
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With WCS
+     .SetNormal "0", "0", "1"
+     .SetOrigin "5.1464466094067", "22.646446609407", "8.025"
+     .SetUVector "1", "0", "0"
+End With
+
+'@ activate global coordinates
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+WCS.ActivateWCS "global"
+
+'@ define brick: component1:stripline_a
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Brick
+     .Reset 
+     .Name "stripline_a" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .Xrange "feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan + T_cup", "(feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan + T_cup) + ms_a_l" 
+     .Yrange "(top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan) - w3", "top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan" 
+     .Zrange "T_pcb", "T_pcb + T_cup" 
+     .Create
+End With
+
+'@ rename block: component1:stripline_a to: component1:microstrip_a
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Solid.Rename "component1:stripline_a", "microstrip_a"
+
+'@ define brick: component1:microstrip_b
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+With Brick
+     .Reset 
+     .Name "microstrip_b" 
+     .Component "component1" 
+     .Material "Copper (annealed)" 
+     .Xrange "(feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan + T_cup) + ms_a_l", "(feed_layer1_xspan-width_l3_2 - feed_pin_a_xspan + T_cup) + ms_a_l - w3" 
+     .Yrange "top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan", "(top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan) + (W_cup - (top_con_yspan-23.2 + 1.5 + w2 + feed_pin_b_yspan))" 
+     .Zrange "T_pcb", "T_pcb + T_cup" 
+     .Create
+End With
+
+'@ pick face
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Pick.PickFaceFromId "component1:microstrip_b", "5"
+
+'@ define port:1
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+' Port constructed by macro Solver -> Ports -> Calculate port extension coefficient
+
+
+With Port
+  .Reset
+  .PortNumber "1"
+  .NumberOfModes "1"
+  .AdjustPolarization False
+  .PolarizationAngle "0.0"
+  .ReferencePlaneDistance "0"
+  .TextSize "50"
+  .Coordinates "Picks"
+  .Orientation "Positive"
+  .PortOnBound "True"
+  .ClipPickedPortToBound "False"
+  .XrangeAdd "0.98*7.07", "0.98*7.07"
+  .YrangeAdd "0", "0"
+  .ZrangeAdd "0.98", "0.98*7.07"
+  .Shield "PEC"
+  .SingleEnded "False"
+  .Create
+End With
+
+'@ define frequency range
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Solver.FrequencyRange "0.5", "3"
+
+'@ define time domain solver parameters
+
+'[VERSION]2025.1|34.0.1|20241028[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With Solver 
+     .Method "Hexahedral"
+     .CalculationType "TD-S"
+     .StimulationPort "All"
+     .StimulationMode "All"
+     .SteadyStateLimit "-40"
+     .MeshAdaption "False"
+     .AutoNormImpedance "True"
+     .NormingImpedance "50"
+     .CalculateModesOnly "False"
+     .SParaSymmetry "False"
+     .StoreTDResultsInCache  "False"
+     .RunDiscretizerOnly "False"
+     .FullDeembedding "False"
+     .SuperimposePLWExcitation "False"
+     .UseSensitivityAnalysis "False"
+End With
 

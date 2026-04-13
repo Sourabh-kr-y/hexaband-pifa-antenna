@@ -299,6 +299,39 @@
             "expr": "3",
             "name": "feed_pin_b_yspan",
             "value": "3"
+        },
+        {
+            "descr": "Slot3 angle",
+            "expr": "45",
+            "name": "a",
+            "value": "45"
+        },
+        {
+            "expr": "0.5",
+            "name": "w1",
+            "value": "0.5"
+        },
+        {
+            "descr": "Slot3 a length in x-span",
+            "expr": "2",
+            "name": "slot3_a_l",
+            "value": "2"
+        },
+        {
+            "descr": "Degree to radian",
+            "expr": "pi/180",
+            "name": "rad",
+            "value": "1.74532925199433e-02"
+        },
+        {
+            "expr": "w1*cos((pi/2) - a*rad)",
+            "name": "e1",
+            "value": "0.353553390593274"
+        },
+        {
+            "expr": "w1*sin((pi/2) - a*rad)",
+            "name": "e2",
+            "value": "0.353553390593274"
         }
     ],
     "version": 1

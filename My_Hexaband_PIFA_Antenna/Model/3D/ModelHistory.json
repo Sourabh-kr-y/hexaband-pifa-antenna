@@ -1374,6 +1374,558 @@
                 "     .Create",
                 "End With"
             ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "move wcs",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.MoveWCS \"local\", \"0.0\", \"0.0\", \"T_pcb + air_gap\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "move wcs",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.MoveWCS \"local\", \"0.0\", \"top_con_yspan\", \"0.0\""
+            ]
+        },
+        {
+            "caption": "define brick: component1:slot3_a",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"slot3_a\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"Vacuum\" ",
+                "     .Xrange \"0\", \"slot3_a_l\" ",
+                "     .Yrange \"0\", \"w1\" ",
+                "     .Zrange \"0\", \"T_cup\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: component1:slot3_b",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"slot3_b\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"Vacuum\" ",
+                "     .Xrange \"slot3_a_l\", \"slot3_a_l + ((5.5-slot3_a_l)/cos(a*(pi/180)))\" ",
+                "     .Yrange \"0\", \"w1\" ",
+                "     .Zrange \"0\", \"T_cup\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "transform: rotate component1:slot3_b",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Transform ",
+                "     .Reset ",
+                "     .Name \"component1:slot3_b\" ",
+                "     .Origin \"Free\" ",
+                "     .Center \"slot3_a_l\", \"w1\", \"0\" ",
+                "     .Angle \"0\", \"0\", \"-a\" ",
+                "     .MultipleObjects \"False\" ",
+                "     .GroupObjects \"False\" ",
+                "     .Repetitions \"1\" ",
+                "     .MultipleSelection \"False\" ",
+                "     .AutoDestination \"True\" ",
+                "     .Transform \"Shape\", \"Rotate\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick end point",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEndpointFromId \"component1:slot3_a\", \"4\""
+            ]
+        },
+        {
+            "caption": "pick end point",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEndpointFromId \"component1:slot3_b\", \"2\""
+            ]
+        },
+        {
+            "caption": "define distance dimension",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Dimension",
+                "    .Reset",
+                "    .CreationType \"picks\"",
+                "    .SetType \"Distance\"",
+                "    .SetID \"14\"",
+                "    .SetOrientation \"Force-V\"",
+                "    .SetDistance \"4.116667\"",
+                "    .SetConnectedElement1 \"component1:slot3_a\"",
+                "    .SetConnectedElement2 \"component1:slot3_b\"",
+                "    .Create",
+                "End With",
+                "",
+                "Pick.ClearAllPicks"
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "move wcs",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.MoveWCS \"local\", \"slot3_a_l + ((5.5-slot3_a_l)/cos(a*(pi/180)))*sin(a*rad)\", \"0.0\", \"0.0\""
+            ]
+        },
+        {
+            "caption": "move wcs",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.MoveWCS \"local\", \"0.0\", \"-(((5.5-slot3_a_l)/cos(a*rad))*sin(a*rad)) + w1\", \"0.0\""
+            ]
+        },
+        {
+            "caption": "activate global coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"global\""
+            ]
+        },
+        {
+            "caption": "activate local coordinates",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.ActivateWCS \"local\""
+            ]
+        },
+        {
+            "caption": "move wcs",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.MoveWCS \"local\", \"-e1\", \"-e2\", \"0.0\""
+            ]
+        },
+        {
+            "caption": "move wcs",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "WCS.MoveWCS \"local\", \"0.0\", \"0.0\", \"T_cup\""
+            ]
+        },
+        {
+            "caption": "define brick: component1:solid1",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"solid1\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"Vacuum\" ",
+                "     .Xrange \"0\", \"5 + e1\" ",
+                "     .Yrange \"0\", \"w1\" ",
+                "     .Zrange \"-T_cup\", \"0\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick end point",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEndpointFromId \"component1:solid1\", \"2\""
+            ]
+        },
+        {
+            "caption": "pick end point",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEndpointFromId \"component1:top patch\", \"86\""
+            ]
+        },
+        {
+            "caption": "define distance dimension",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Dimension",
+                "    .Reset",
+                "    .CreationType \"picks\"",
+                "    .SetType \"Distance\"",
+                "    .SetID \"15\"",
+                "    .SetOrientation \"Force-V\"",
+                "    .SetDistance \"-1.397497\"",
+                "    .SetConnectedElement1 \"component1:solid1\"",
+                "    .SetConnectedElement2 \"component1:top patch\"",
+                "    .Create",
+                "End With",
+                "",
+                "Pick.ClearAllPicks"
+            ]
+        },
+        {
+            "caption": "change dimension 15",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Dimension",
+                "    .Reset",
+                "    .SetID \"15\"",
+                "    .SetDistance \"-3.727198\"",
+                "    .SetOrientation \"Force-V\"",
+                "    .Modify",
+                "End With"
+            ]
+        },
+        {
+            "caption": "pick end point",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEndpointFromId \"component1:top patch\", \"58\""
+            ]
+        },
+        {
+            "caption": "pick end point",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Pick.PickEndpointFromId \"component1:top patch\", \"86\""
+            ]
+        },
+        {
+            "caption": "define distance dimension",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Dimension",
+                "    .Reset",
+                "    .CreationType \"picks\"",
+                "    .SetType \"Distance\"",
+                "    .SetID \"16\"",
+                "    .SetOrientation \"Force-V\"",
+                "    .SetDistance \"-12.153183\"",
+                "    .SetConnectedElement1 \"component1:top patch\"",
+                "    .SetConnectedElement2 \"component1:top patch\"",
+                "    .Create",
+                "End With",
+                "",
+                "Pick.ClearAllPicks"
+            ]
+        },
+        {
+            "caption": "define brick: component1:slot3_d",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                "     .Reset ",
+                "     .Name \"slot3_d\" ",
+                "     .Component \"component1\" ",
+                "     .Material \"Vacuum\" ",
+                "     .Xrange \"(5 + e1)\", \"(5 + e1) - w1\" ",
+                "     .Yrange \"-2\", \"0\" ",
+                "     .Zrange \"-T_cup\", \"0\" ",
+                "     .Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "rename block: component1:solid1 to: component1:slot3_c",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Rename \"component1:solid1\", \"slot3_c\""
+            ]
+        },
+        {
+            "caption": "transform: rotate component1:slot3_d",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Transform ",
+                "     .Reset ",
+                "     .Name \"component1:slot3_d\" ",
+                "     .Origin \"Free\" ",
+                "     .Center \"5 + e1\", \"0\", \"0\" ",
+                "     .Angle \"0\", \"0\", \"-30\" ",
+                "     .MultipleObjects \"False\" ",
+                "     .GroupObjects \"False\" ",
+                "     .Repetitions \"1\" ",
+                "     .MultipleSelection \"False\" ",
+                "     .AutoDestination \"True\" ",
+                "     .Transform \"Shape\", \"Rotate\" ",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:top patch, component1:slot3_a",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:top patch\", \"component1:slot3_a\""
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:top patch, component1:slot3_b",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:top patch\", \"component1:slot3_b\""
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:top patch, component1:slot3_c",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:top patch\", \"component1:slot3_c\""
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:top patch, component1:slot3_d",
+            "version": "2025.1|34.0.1|20241028",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:top patch\", \"component1:slot3_d\""
+            ]
         }
     ]
 }
